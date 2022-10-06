@@ -1,0 +1,57 @@
+
+*{
+    padding :0;
+    margin :0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+hr{
+    width: 50%;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #899198;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+a:hover{
+    color: white;
+    background-color: #B7CCDF;
+}
+
+.plateau{
+    height: 100vh;
+    background-color: #E6EFF6;
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+}
+
+.card{
+    /* content: url(/ressources/Img/createcard.jpg); */
+    margin: 4%;
+    padding: 5%;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:5%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+.card:hover{
+    box-shadow: -2px 5px 9px 9px #BACCDE;
+}
