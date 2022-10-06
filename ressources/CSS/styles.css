@@ -28,7 +28,7 @@ a:hover{
 }
 
 .plateau{
-    height: 100vh;
+    height: fit-content;
     background-color: #E6EFF6;
     display: grid;
     grid-template-rows: 1fr 1fr ;
@@ -50,8 +50,27 @@ a:hover{
     flex-wrap: wrap;
     border-radius: 10px;
     font-family: 'Gemunu Libre', sans-serif;
+    height: fit-content;
+}
+
+.card *{
+    margin: 5%;
 }
 
 .card:hover{
     box-shadow: -2px 5px 9px 9px #BACCDE;
+}
+
+@media (max-width: 1800px) {
+    .plateau{
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .plateau { 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
 }
